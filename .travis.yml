@@ -1,8 +1,9 @@
 language: cpp
-compiler: gcc
+compiler: 
+  - gcc
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install qt-devel
+  - sudo apt-get install qt-sdk
 script:
   - mkdir build
   - cd build
