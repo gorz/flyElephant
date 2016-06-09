@@ -1,0 +1,10 @@
+language: cpp
+compiler: gcc
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install qt-devel
+script:
+  - mkdir build
+  - cd build
+  - qmake ../flyelephant.pro
+  - make -f Makefile.Debug
